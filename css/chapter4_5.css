@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* Coffeebuzz chapter 4-5 CSS Document */
+
+/********************************* GENERAL RULES ****************************/
+/* Apply a natural box layout model to all elements  */
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	background:url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: cover; /* the background image will scale
+	                           to cover the entire content area
+	                           keeping the aspect-ratio */
+}
+
+body{
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+/*
+Pseudo-classes for anchor <a> tag:
+1. a:link 
+2. a:visited
+3. a:focus
+4. a:hover
+5. a:active
+
+Note:  Must be in this order, but it's ok to omit one or more
+*/
+
+a:link{
+	color:#300;
+}
+
+a:visited{
+	color:#b64429;
+}
+
+
+/*********************************** HEADER *********************************/
+header{
+	color:#FFFFFF;
+	text-align: center;
+	padding:1rem 2%;
+	/*
+	   REM vs. EM
+	   rem:  relative to font-size of root element
+	
+	   While em is relative to the font size of its direct or nearest parent, rem
+	   is relative to the html (root) font-size.
+	   
+	*/
+}
+
+header h1{
+	margin:0;
+	text-shadow: -2px -2px 4px #000;
+	font-size: 5em;
+}
+
+/********************************** NAVIGATION ******************************/
+nav ul{
+	list-style: none; /* remove the default bullets */
+	margin:0; /* remove the default margin and padding*/
+	padding:0;
+	/*text-align: center;*/
+}
+
+nav ul li{
+	float:left;
+	width:25%;
+	background:rgba(255,255,255,0.9);
+	border-right:1px solid rgba(103,76,55,0.3);
+}
+
+nav ul li:last-child{
+	/*remove last border from li */
+	border-right:none;
+}
+
+nav ul li a{
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding:.5em 0;
+	transition: background 0.75s ease,color 0.75s ease;
+}
+
+nav ul li.active a, nav ul li a:hover{
+	color:#593620;
+	background: rgba(103,76,55,0.3);
+	
+}
+/*
+nav ul li.active a{
+	color:#593620;
+	background: rgba(103,76,55,0.3);
+}
+*/
+/********************************** MAIN SECTION ***************************/
+main{
+	padding: 0 .45rem;
+	}
+
+section{
+	background: rgba(255,255,255,0.80);
+	padding: 1rem;
+	margin-top:1rem;
+}
+
+#splash img{
+	max-width: 100%;/* RWD:  Image will scale down if it has to, but 
+		              will never scale up to be larger than its original
+		             size
+		
+					If the width propery is set to 100%, the image will
+		            be responsive and scale up and down
+					*/
+	border: 1px dashed #463d2b;
+	padding:0.25em;
+}
+
+/********************************** SIDEBAR ******************************/
+
+
+
+
+/******************************* FOOTER **********************************/
+footer{
+	background:rgba(0,0,0,0.5);
+	height:50px;
+	font-size:75%;
+}
+
+footer p{
+	color:#fff;
+	text-align: center;
+	padding-top:1.5em;
+}
+
+/********************************** SPECIAL ******************************/
+.row::after{
+	/* row:  Force an element not to collapse */
+	content:"";
+	clear:both;
+	display:table;
+}

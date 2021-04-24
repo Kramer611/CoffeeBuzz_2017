@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" 
+      content="Welcome to Coffee Buzz. We are dedicated to filling all your caffeine needs through our quality coffees and teas.">
+<!-- mwilliams:  Added for Responsive Design:
+	- Use the meta viewport tag to control the width and scaling of the browser's viewport.
+	- Include width=device-width to match the screen's width in device-independent pixels.
+	- Include initial-scale=1 to establish a 1:1 relationship between CSS pixels and device-independent pixels.
+	- Ensure your page is accessible by not disabling user scaling 
+	  maximum-scale=1 would disable scaling.
+	  
+	  Note:  Not all mobile browsers handle orientation changes in the same way. For example, Mobile Safari often just zooms the page when changing from portrait to landscape, instead of laying out the page as it would if originally loaded in landscape. If web developers want their scale settings to remain consistent when switching orientations on the iPhone, they must add a maximum-scale value to prevent this zooming, which has the sometimes-unwanted side effect of preventing users from zooming in:
+	
+
+	https://css-tricks.com/snippets/html/responsive-meta-tag/
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CoffeeBuzz Menu - Moncton, New Brunswick</title>
+
+<!-- Chapter 13:  Fonts (Google Fonts) -->
+<link href="//fonts.googleapis.com/css?family=Capriola&subset=latin" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Aldrich&subset=latin" rel="stylesheet" type="text/css">
+
+<!-- Chapter 13-14 - Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+<link href="../css/chapter14.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!-- PAGE HEADER GOES HERE -->
+	<header>
+		<h1>Coffee Buzz</h1>
+		<p>Provide all the caffeine that you need to power your life</p>
+	</header>	
+	
+	<!-- PAGE NAVIGATION GOES HERE -->
+	<nav class="row">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li class="active">
+				<a href="#" title="Check out our menu">MENU</a>
+				<!-- Chapter 9:  Remove the submemnu 
+               	<ul>
+                	<li><a href="#">COFFEE</a></li>
+                    <li><a href="#">TEA</a></li>
+                    <li><a href="#">DONUTS</a></li>
+                    <li><a href="#">MUFFINS</a></li>
+                </ul>-->
+			</li>
+			<li><a href="#" title="How to contact us">CONTACT</a></li>
+			<li><a href="#" title="More about Coffee Buzz">ABOUT</a></li>
+	  	</ul>
+		
+	</nav>
+   
+   	<!-- MAIN PAGE CONTENT GOEST HERE -->	
+    <main class="row">
+    	<!--Chapter 6:  Layouts -->
+    	<div id="content-wrapper">
+			<section class="row text-center">
+				<hr>	
+					<h2>Our <strong>Coffee</strong></h2>
+				<hr>
+				<div class="products">
+					<div class="col-m-4 col-sm-6">
+						<div class="product-item">
+								<div class="product-image">
+									<a href="#">
+										<img src="../img/menu/coffee/house.jpg" alt="House Blend">
+									</a>
+									<h4>House Blend</h4>
+								</div>
+								<div class="product-info-fade">
+									<ul>
+										<li>House Blend</li>
+										<li>A smooth, mild blend of coffees from Mexico, Bolivia and
+										    Guatemala.
+										</li>
+										<li><span></span> $1.49</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+					<div class="col-m-4 col-sm-6">
+						<div class="product-item">
+								<div class="product-image">
+									<a href="#">
+										<img src="../img/menu/coffee/cappuccino.jpg" alt="Cappuccino">
+									</a>
+									<h4>Cappuccino</h4>
+								</div>
+								<div class="product-info-fade">
+									<ul>
+										<li>House Blend</li>
+										<li>A mixture of espresso, steamed milk and foam</li>
+										<li><span></span> $1.89</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+					<div class="col-m-4 col-sm-6">
+						<div class="product-item">
+								<div class="product-image">
+									<a href="#">
+										<img src="../img/menu/coffee/mocha_latte.jpg" alt="Mocha Latte">
+									</a>
+									<h4>Cappuccino</h4>
+								</div>
+								<div class="product-info-fade">
+									<ul>
+										<li>Mocha Latte</li>
+										<li>Espresso, steamed milk and chocolate syrup</li>
+										<li><span></span> $2.35</li>
+									</ul>
+								</div>
+						</div>
+					</div>						
+				</div>
+			</section>
+			
+
+		</div>
+	    
+	    <!-- PAGE SIDEBAR NAVIGATION GOES HERE -->  
+	    <!--Chapter 6:  Layouts (move to bottom of main)-->
+		<aside>
+			<!--<h2>To learn more</h2>-->
+			<ul>
+				<li>To learn more</li>
+				<li><a href="lounge.html" title="Check out our music">Lounge</a></li>
+				<li><a href="careers.html" title="Careers at CoffeeBuzz">Careers</a></li>
+				<li><a href="news.html" title="Read our newsletter">Newsletter</a></li>
+				<li><a href="fairtrade.html" title="Learn more about fair trade coffee">Fair Trade</a></li>
+			</ul>	
+			
+			<div class="promo">
+				<h3>Pay with your phone</h3>
+				<p>Download our app to pay using your mobile phone</p>
+				<p><a href="#"><img src="../img/apple_pay-dark.png" alt="Download iphone app" /></a></p>
+				<p><a href="#"><img src="../img/google-play-dark.png" alt="Download android app" /></a></p>
+	  		</div>		
+		</aside>		
+	</main>  	
+  	<!-- PAGE FOOTER GOES HERE -->
+	<footer>
+   		<p><em>Copyright &copy;2017 CoffeeBuzz</em></p>
+	</footer>
+</body>
+</html>

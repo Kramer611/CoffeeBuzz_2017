@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description"
+		  content="Coffee Buzz newsletter, your caffeine resource">
+	<title>CoffeeBuzz News - Moncton, New Brunswick</title>
+	<!-- Embedded Style sheet -->
+	<style>
+		body{
+			font-size: 16px;
+			font-family:Verdana, Geneva, sans-serif;
+			border:1px solid black;
+			padding:1em 1.5em;
+			border-radius:1.5em;
+		}
+		
+		header img{
+			max-width: 100%
+		}
+		h2{
+			color:#68422B;
+		}
+		article{
+			padding: 1.5em;
+			
+			/******** Newspaper style columns ***************/
+			/* 3 columns */
+			-webkit-columns: 3 300px; 
+			-moz-columns: 3 300px; 
+			columns: 3 300px; /*column-count: 3; column-width:300px*/
+			
+			
+			/* ruler between columns */
+			-webkit-column-rule:2px solid black;
+			-moz-column-rule:2px solid black;
+			column-rule:2px solid black;
+			
+			/* gap between columns */
+			-moz-column-gap:3em;
+			-webkit-column-gap:3em;
+			column-gap:3em;
+			
+		}
+		
+		/******************* end of regular css rules *******************/
+		
+		/*start of responsive*/
+		@media (min-width:800px){
+			/* add a box shadow when screen is 800 or more pixels wide*/
+			body{
+				/* centered screen */
+				margin:1em auto;
+				width:90%;
+				/* box shadow */
+				box-shadow: 5px 5px 0 0;
+					
+			}
+		}/* end of responsive 800px */
+		
+			/* Chapter 13:  Printing */
+			@media print{
+				html, body{background-color:#fff}
+				body{
+					color:#000;
+					font-family: "Times New Roman", Times, serif;
+					font-size:12pt;
+					border:0;
+					box-shadow: none;
+					margin:0;
+					padding:0;
+					width:100%;					
+				}
+				
+				h2{color:#000;}
+				img{display: none}
+				/*img{visibility: hidden}*/
+				
+				.back{display:none}
+				
+				header::after{
+					content:"Coffee Buzz News";
+				}
+				
+				header{
+					font-size:20pt;
+					font-weight: bold;
+					text-align: center;
+				}/* end of media print header*/
+				
+			}/*end media print*/
+		
+			
+	</style>
+
+</head>
+
+<body>
+<header> 
+	<img src="../img/buzz.jpg"
+             alt="Caffeine Buzz" title="Caffeine Buzz"> 
+             
+</header>
+<section>
+  <h2>Sources</h2>
+  <article>
+    <p> One common source of caffeine is the <a href="http://en.wikipedia.org/wiki/Coffea" title="Coffea">coffee plant</a>, the <a href="http://en.wikipedia.org/wiki/Coffee_bean" title="Coffee bean">beans</a> from which are used to produce <a href="http://en.wikipedia.org/wiki/Coffee" title="Coffee">coffee</a>.  Caffeine content varies substantially between <a href="http://en.wikipedia.org/wiki/Arabica" title="Arabica">Arabica</a> and <a href="http://en.wikipedia.org/wiki/Robusta" title="Robusta">Robusta</a> species and to a lesser degree between varieties of each species. </p>
+    <p> One dose of caffeine is generally considered to be 100 mg. In theory, a single serving (6 fl oz / 150 ml) of drip coffee or one-half caffeine
+      tablet would deliver this dose. In the real world, coffee varies considerably in caffeine content per serving, ranging from about 75 mg to 250 mg.                
+      Generally, dark roast coffee has less caffeine than lighter roasts since the roasting process reduces caffeine content of the bean. </p>
+    <p> <a href="http://en.wikipedia.org/wiki/Tea" title="Tea">Tea</a> is another common source of caffeine in many cultures. Tea contains somewhat less caffeine per serving
+      than coffee, (usually about half as much, depending on the strength of the brew),though certain types of tea, such as Lapsang sou chong smoked teas, and oolong
+      contain more caffeine. </p>
+    <p> Caffeine is also common in <a href="http://en.wikipedia.org/wiki/Soft_drink" title="Soft drink">soft drinks</a> such as <a href="http://en.wikipedia.org/wiki/Cola" title="Cola">cola</a>. Such drinks typically contain about 25 mg to 50 mg of caffeine per serving.
+      
+      Some  "<a href="http://en.wikipedia.org/wiki/Energy_drink"  title="Energy drink">energy drinks</a>" such as <a href="http://en.wikipedia.org/wiki/Red_Bull" title="Red Bull">Red Bull</a> contain 80 mg, while others  offer considerably more caffeine per serving,
+      from 100 mg to 400 mg. </p>
+    <p> <strong>Mateine</strong> and <strong>guaranine</strong> are other names for <strong>caffeine</strong>. The names come from <a href="http://en.wikipedia.org/wiki/Yerba_mat%C3%A9" title="Yerba mat&eacute;">yerba mat&eacute;</a> and <a href="http://en.wikipedia.org/wiki/Guarana" title="Guarana">guarana</a> respectively, caffeine-containing plants used for tea and other things. Many yerba mat&eacute;
+      enthusiasts insist that mateine is a <a href="http://en.wikipedia.org/wiki/Stereoisomer" title="Stereoisomer">stereoisomer</a> of caffeine
+      and thus a different substance altogether.  However, this is impossible;caffeine is an <a href="http://en.wikipedia.org/wiki/Chirality_%28chemistry%29" title="Chirality(chemistry)">achiral</a> molecule with no chiral centers, and therefore has no stereoisomers. Similar
+      claims are sometimes made of guaranine. </p>
+    <p> Caffeine is sometimes called <strong>theine</strong> when it is found in tea, as the caffeine in tea was once thought to be a separate compound to the
+      caffeine found in coffee. But tea does contain another <a href="http://en.wikipedia.org/wiki/Xanthine" title="Xanthine">xanthine</a>, <a href="http://en.wikipedia.org/wiki/Theophylline" title="Theophylline">theophylline</a> whose
+      chemical structure is <a href="http://en.wikipedia.org/wiki/Carbon" title="Carbon">C</a><sub>7</sub> <a href="http://en.wikipedia.org/wiki/Hydrogen" title="Hydrogen">H</a><sub>8</sub> <a href="http://en.wikipedia.org/wiki/Nitrogen" title="Nitrogen">N</a><sub>4</sub> <a href="http://en.wikipedia.org/wiki/Oxygen" title="Oxygen">O</a><sub>2</sub> compared to caffeine's <a href="http://en.wikipedia.org/wiki/Carbon"  title="Carbon">C</a><sub>8</sub> <a href="http://en.wikipedia.org/wiki/Hydrogen" title="Hydrogen">H</a><sub>10</sub> <a href="http://en.wikipedia.org/wiki/Nitrogen" title="Nitrogen">N</a><sub>4</sub> <a href="http://en.wikipedia.org/wiki/Oxygen" title="Oxygen">O</a><sub>2</sub>.
+      This is similar to the naming problem with <strong>mateine</strong> and <strong>guaranine</strong>. </p>
+  </article>
+</section>
+<p><a class="back" href="index.html">Back to home page</a></p>
+</body>
+</html>
